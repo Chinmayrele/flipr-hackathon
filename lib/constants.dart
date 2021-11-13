@@ -1,16 +1,5 @@
+// Colors
 import 'package:flutter/material.dart';
 
-class SelectPage extends StatelessWidget {
-  const SelectPage({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      body: Row(
-        children: [
-          Spacer(),
-        ],
-      ),
-    );
-  }
-}
+const kPrimaryColor = Colors.deepOrangeAccent;
+final kSecondaryColor = Colors.orange.shade600;
