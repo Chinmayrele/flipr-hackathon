@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:zomato_hackathon/auth/signin.dart';
 import 'package:zomato_hackathon/common/selectpage.dart';
+import 'package:zomato_hackathon/screens/restaurant/ask_create_restaurant.dart';
+import 'package:zomato_hackathon/screens/restaurant/create_restaurant.dart';
 
 void main() {
   runApp(const MyApp());
@@ -17,6 +19,6 @@ class MyApp extends StatelessWidget {
           fontFamily: "Poppins",
           primarySwatch: Colors.blue,
         ),
-        home: SignInScreen());
+        home: const CreateRestaurant());
   }
 }
