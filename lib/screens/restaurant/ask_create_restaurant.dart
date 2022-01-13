@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:zomato_hackathon/common/buttons.dart';
+import 'package:zomato_hackathon/common/navigate.dart';
+import 'package:zomato_hackathon/screens/restaurant/create_restaurant.dart';
 
 class AskCreateRestaurant extends StatelessWidget {
   const AskCreateRestaurant({Key? key}) : super(key: key);
@@ -18,7 +20,10 @@ class AskCreateRestaurant extends StatelessWidget {
             const Text("No Registered Restaurent found for this Email."),
             CustomButton(
                 title: const Text("Create Restaurent"),
-                onTap: () => {},
+                onTap: () {
+                  replaceNavigateTo(
+                      context: context, page: const CreateRestaurant());
+                },
                 buttonType: ButtonType.text)
           ],
         ),

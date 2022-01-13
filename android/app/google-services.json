@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "947591959598",
+    "project_id": "zomato-hackathon",
+    "storage_bucket": "zomato-hackathon.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:947591959598:android:eae4421eca09bae4e6bbbf",
+        "android_client_info": {
+          "package_name": "com.example.zomato_hackathon"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "947591959598-6v41aceq362l689pqd7t094d06e0k8oe.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCLN0N7fPjtPD61rDk8BOYjhkISVShiHjM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "947591959598-6v41aceq362l689pqd7t094d06e0k8oe.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

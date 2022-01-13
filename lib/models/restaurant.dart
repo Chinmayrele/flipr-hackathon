@@ -1,3 +1,5 @@
+import 'package:zomato_hackathon/models/dish.dart';
+
 class Restaurant {
   String id;
   String title;
@@ -6,6 +8,7 @@ class Restaurant {
   int minimumPrice;
   double latitude;
   double longitude;
+  List<Dish> alldishes;
   double rating;
 
   Restaurant(
@@ -16,5 +19,6 @@ class Restaurant {
       required this.minimumPrice,
       required this.latitude,
       required this.longitude,
+      required this.alldishes,
       required this.rating});
 }

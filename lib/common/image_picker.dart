@@ -18,12 +18,15 @@ class CustomImagePicker extends StatefulWidget {
 
 class _CustomImagePickerState extends State<CustomImagePicker> {
   late File _pickedImage;
+  bool picked = false;
   void _pickImage() async {
     final image = ImagePicker();
-    final imageFile = await image.pickImage(
-        source: ImageSource.gallery, imageQuality: 50, maxWidth: 150);
+    final imageFile = await image.pickImage(source: ImageSource.gallery);
     setState(() {
       _pickedImage = File(imageFile!.path);
+    });
+    setState(() {
+      picked = true;
     });
     widget.imagePickerFn(File(imageFile!.path));
   }
@@ -32,7 +35,10 @@ class _CustomImagePickerState extends State<CustomImagePicker> {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        CircleAvatar(radius: 80, backgroundImage: FileImage(_pickedImage)),
+        (picked)
+            ? CircleAvatar(radius: 80, backgroundImage: FileImage(_pickedImage))
+            : const CircleAvatar(
+                radius: 80, backgroundImage: NetworkImage(imagePlaceholder)),
         TextButton.icon(
           onPressed: () {
             _pickImage();
