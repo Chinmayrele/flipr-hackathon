@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Zomato Hackathon',
+      title: 'Zomato Hackathon!',
       theme: appTheme,
       home: StreamBuilder(
           stream: FirebaseAuth.instance.authStateChanges(),

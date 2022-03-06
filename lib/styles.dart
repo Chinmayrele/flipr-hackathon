@@ -38,6 +38,7 @@ const headertitleTextStyle = TextStyle(
     color: backgroundColor, fontWeight: FontWeight.bold, fontSize: 18);
 
 const headeraddressTextStyle = TextStyle(color: backgroundColor, fontSize: 16);
+const addressStyle = TextStyle(color: backgroundColor, fontSize: 16);
 
 final appTheme = ThemeData(
     fontFamily: "Poppins",
