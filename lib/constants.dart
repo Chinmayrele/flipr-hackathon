@@ -7,6 +7,7 @@ const kTextDarkColor = Color(0xFF666964);
 const backgroundColor = Color(0xFFEAEAE9);
 const lightBlue = Color(0xFF4963CC);
 const cyan = Color(0xFF2C898b);
+const red = Color(0xFF2C998b);
 
 const kAppTitle = "Harapeko!!";
 
